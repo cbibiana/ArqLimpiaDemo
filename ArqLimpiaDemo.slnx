@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Api/">
+    <Project Path="TiendaProductos.WebAPI/TiendaProductos.WebAPI.csproj" />
+  </Folder>
+  <Folder Name="/Core/">
+    <Project Path="TiendaProductos.Aplicacion/TiendaProductos.Aplicacion.csproj" />
+    <Project Path="TiendaProductos.Dominio/TiendaProductos.Dominio.csproj" />
+  </Folder>
+  <Folder Name="/Infraestructura/">
+    <Project Path="TiendaProductos.Infraestructura/TiendaProductos.Infraestructura.csproj" />
+  </Folder>
+</Solution>

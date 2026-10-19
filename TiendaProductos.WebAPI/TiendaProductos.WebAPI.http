@@ -1,0 +1,39 @@
+@TiendaProductos.WebAPI_HostAddress = http://localhost:5194
+
+GET {{TiendaProductos.WebAPI_HostAddress}}/api/productos/01A1516C-615C-7A66-8C53-8E83B8588C6C
+Accept: application/json
+
+###
+
+GET {{TiendaProductos.WebAPI_HostAddress}}/api/productos/filtrado?activo=false
+Accept: application/json
+
+###
+
+POST {{TiendaProductos.WebAPI_HostAddress}}/api/productos/
+content-Type: application/json
+{
+  "nombre": "pantalla",
+  "descripcion": "Este es un producto de prueba",
+  "precio": 19.99,
+  "moneda": "Pesos",
+  "inventarioInicial": 10
+}
+
+###
+PUT {{TiendaProductos.WebAPI_HostAddress}}/api/productos/11A1516C-615C-7A66-8C53-8E83B8588C6C
+content-Type: application/json
+{
+  "nombre": "Producto de actualizado",
+  "descripcion": "Este es un producto de prueba actualizado",
+  "precio": 200,
+  "moneda": "Pesos",
+  "Activo": false
+}
+
+###
+POST {{TiendaProductos.WebAPI_HostAddress}}/api/productos/01A1516C-615C-7A66-8C53-8E83B8588C6C/inventario
+Content-Type: application/json
+{
+  "delta": -5
+}
